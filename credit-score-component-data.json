@@ -1,0 +1,51 @@
+{
+  "id": "credit-score-component",
+  "name": "Credit Score Component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/101digital/credit-score-component.git"
+  },
+  "config": {
+    "env": {
+      "development": {
+        "creditAssessmentBaseUrl": "https://sandbox.101digital.io/credit-assessment-service/1.0.0-SNAPSHOT",
+        "openBankAuthBaseUrl": "https://sandbox.101digital.io/open-banking-auth-service/1.0.0"
+      },
+      "staging": {
+        "creditAssessmentBaseUrl": "https://sandbox.101digital.io/credit-assessment-service/1.0.0-SNAPSHOT",
+        "openBankAuthBaseUrl": "https://sandbox.101digital.io/open-banking-auth-service/1.0.0"
+      },
+      "production": {
+        "creditAssessmentBaseUrl": "https://sandbox.101digital.io/credit-assessment-service/1.0.0-SNAPSHOT",
+        "openBankAuthBaseUrl": "https://api.101digital.io/open-banking-auth-service/v1.0"
+      }
+    }
+  },
+  "dependencies": [
+    {
+      "name": "https://github.com/101digital/react-native-theme-component.git"
+    },
+    {
+      "name": "react-native-webview",
+      "version": "^11.14.0"
+    }
+  ],
+  "templates": [],
+  "texts": {
+    "credit_check": {
+      "btn_cancel": "Cancel",
+      "btn_back": "Back",
+      "btn_continue": "Continue",
+      "msg_warning_login": "By continuing you will be redirected to your bank provider to allow access to your credit score",
+      "lbl_login_account": "Login to your %s account",
+      "msg_permission_access": "We need permission to access the Credit Score at the %s bank. Doing so, helps us to perform the preliminary assesment of your eligibiliity.",
+      "lbl_credit_pending": "Credit Check Pending",
+      "msg_credit_checking": "Your credit check is processing, please wait until we recieve the information from your bank.",
+      "lbl_low_score": "Low Score",
+      "msg_low_score": "Sorry, your Credit Score is too low to continue.\nPlease contact your bank to\nfind out how to increase your Credit Score.",
+      "lbl_good_score": "Good Score",
+      "msg_good_score": "Congratulations!, you have a good Credit Score.\nPlease “Continue” to fill in the loan application.",
+      "lbl_credit_score": "Credit Score"
+    }
+  }
+}
